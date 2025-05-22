@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Resume</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="profile-header py-5 text-center"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Photos/bg.jpg'); background-size: cover; background-position: center; color: white; min-height: 100vh; display: flex; align-items: center;">
+        <div class="container">
+            <img src="Photos/me.jpg" alt="Profile" class="profile-img rounded-circle mb-2"
+                style="width: 150px; height: 150px; border: 3px solid white; object-fit: cover;">
+            <h1 class="mb-1">Norlie Jay B. Verzosa</h1>
+            <p class="lead mb-2">Programmer | PCSO Lotto Agent</p>
+
+            <!-- Bio Section -->
+            <div class="bio mb-3 mx-auto" style="max-width: 600px; font-size: 0.95rem;">
+                <p>Full-stack developer proficient in PHP, and database management. Specializes in creating
+                    seamless user
+                    experiences while maintaining scalable architecture. Applies the same strategic approach to web
+                    development as to
+                    real estate portfolio management.</p>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="d-flex justify-content-center">
+                <a href="https://web.facebook.com/nj.verzosa.2024" class="social-icon text-white mx-2"
+                    style="font-size: 30px;">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://github.com/settings/profile" class="social-icon text-white mx-2"
+                    style="font-size: 30px;">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Details -->
+    <div class="container py-5">
+        <div class="row">
+            <!-- Left Column (About + Education) -->
+            <div class="col-lg-4">
+                <!-- About Me Card -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0"><i class="fas fa-user me-2"></i>About Me</h5>
+                    </div>
+                    <div class="card-body">
+
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Poblacion, Dasol, Pangasinan
+                            </li>
+                            <li class="mb-2"><i class="fas fa-envelope me-2"></i> njbverzosa@gmail.com</li>
+                            <li class="mb-2"><i class="fas fa-phone me-2"></i> 09468241894</li>
+                            <li class="mb-2"><i class="fas fa-calendar-alt me-2"></i> November 24, 2000</li>
+                            <li class="mb-2"><i class="fas fa-heart me-2"></i> Single</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Card -->
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0 text-primary">
+                            <i class="fas fa-graduation-cap me-2"></i>Education
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="education-item mb-4">
+                            <h6 class="fw-bold mb-1">PSU Alaminos City Campus</h6>
+                            <p class="mb-1">Bachelor of Science in Information Technology</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Bolaney, Alaminos City,
+                                    Pangasinan</li>
+                                <li><i class="fas fa-calendar-alt me-2"></i> 2020-2024</li>
+                            </ul>
+                        </div>
+
+                        <div class="education-item">
+                            <h6 class="fw-bold mb-1">Don Marcelo Jimenez Memorial Polytechnic Institute</h6>
+                            <p class="mb-1">General Academic Strand (GAS)</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Poblacion, Dasol, Pangasinan
+                                </li>
+                                <li><i class="fas fa-calendar-alt me-2"></i> 2014-2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Right Column (Skills, Projects, Certificates) -->
+            <div class="col-lg-8">
+                <!-- Skills Card -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0"><i class="fas fa-code me-2"></i>Skills</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6>HTML/CSS</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 95%"></div>
+                        </div>
+                        <h6>JavaScript</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 95%"></div>
+                        </div>
+                        <h6>PHP</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 95%"></div>
+                        </div>
+                        <h6>MySQL</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Card -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0"><i class="fas fa-code-branch me-2 text-primary"></i>Recent Projects
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Project 1 - GSO Vehicle Reservation System -->
+                        <div class="d-flex mb-3 project-item align-items-start flex-column">
+                            <div class="d-flex w-100">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-car fa-2x text-warning"></i>
+                                </div>
+                                <div class="ms-3 flex-grow-1">
+                                    <h6 class="mb-0 fw-bold">GSO Vehicle Reservation System</h6>
+                                    <p class="text-muted mb-1">Burgos, Pangasinan</p>
+                                    <small class="text-success"><i class="fas fa-check-circle me-1"></i>Completed:
+                                        October 2023</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <button class="btn btn-sm btn-outline-secondary preview-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Preview Image Container (hidden by default) -->
+                            <div class="preview-image-container mt-2 w-100 d-none">
+                                <div class="ms-5">
+                                    <img src="Projects/Doc_1.jpg" alt="Project Preview" class="img-fluid rounded border"
+                                        style="max-height: 200px;">
+                                    <div class="text-center mt-1">
+                                        <small class="text-muted">GSO Vehicle Reservation System Preview</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 - Lot Records Management System -->
+                        <div class="d-flex mb-3 project-item align-items-start flex-column">
+                            <div class="d-flex w-100">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-map-marked-alt fa-2x text-info"></i>
+                                </div>
+                                <div class="ms-3 flex-grow-1">
+                                    <h6 class="mb-0 fw-bold">Lot Records Management System</h6>
+                                    <p class="text-muted mb-1">Applied in DENR-Cenro Alaminos City, Pangasinan</p>
+                                    <small class="text-success"><i class="fas fa-check-circle me-1"></i>Completed: May
+                                        2024</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <button class="btn btn-sm btn-outline-secondary preview-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Preview Image Container (hidden by default) -->
+                            <div class="preview-image-container mt-2 w-100 d-none">
+                                <div class="ms-5">
+                                    <img src="Projects/Doc_2.jpg" alt="Project Preview" class="img-fluid rounded border"
+                                        style="max-height: 200px;">
+                                    <div class="text-center mt-1">
+                                        <small class="text-muted">Lot Records Management System Preview</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 - Electronic Health Records Management System -->
+                        <div class="d-flex mb-3 project-item align-items-start flex-column">
+                            <div class="d-flex w-100">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-file-medical fa-2x text-danger"></i>
+                                </div>
+                                <div class="ms-3 flex-grow-1">
+                                    <h6 class="mb-0 fw-bold">Electronic Health Records Management System</h6>
+                                    <p class="text-muted mb-1">Better Life Medical Clinic, Alaminos</p>
+                                    <small class="text-success"><i class="fas fa-check-circle me-1"></i>Completed:
+                                        November 2024</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <button class="btn btn-sm btn-outline-secondary preview-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Preview Image Container (hidden by default) -->
+                            <div class="preview-image-container mt-2 w-100 d-none">
+                                <div class="ms-5">
+                                    <img src="Projects/Doc_3.jpg" alt="Project Preview" class="img-fluid rounded border"
+                                        style="max-height: 200px;">
+                                    <div class="text-center mt-1">
+                                        <small class="text-muted">Electronic Health Records Management System
+                                            Preview</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 - Dental Clinic Appointment System -->
+                        <div class="d-flex mb-3 project-item align-items-start flex-column">
+                            <div class="d-flex w-100">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-tooth fa-2x text-teal"></i>
+                                </div>
+                                <div class="ms-3 flex-grow-1">
+                                    <h6 class="mb-0 fw-bold">Dental Clinic Appointment System</h6>
+                                    <p class="text-muted mb-1">Alaminos, Pangasinan</p>
+                                    <small class="text-success"><i class="fas fa-check-circle me-1"></i>Completed:
+                                        December 2024</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <button class="btn btn-sm btn-outline-secondary preview-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Preview Image Container (hidden by default) -->
+                            <div class="preview-image-container mt-2 w-100 d-none">
+                                <div class="ms-5">
+                                    <img src="Projects/Doc_4.jpg" alt="Project Preview" class="img-fluid rounded border"
+                                        style="max-height: 200px;">
+                                    <div class="text-center mt-1">
+                                        <small class="text-muted">Dental Clinic Appointment System Preview</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 5 - DMJMPI Portal System -->
+                        <div class="d-flex mb-3 project-item align-items-start flex-column">
+                            <div class="d-flex w-100">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-university fa-2x text-purple"></i>
+                                </div>
+                                <div class="ms-3 flex-grow-1">
+                                    <h6 class="mb-0 fw-bold">DMJMPI Portal System</h6>
+                                    <p class="text-muted mb-1">Applied in Poblacion, Dasol, Pangasinan</p>
+                                    <small class="text-success"><i class="fas fa-check-circle me-1"></i>Completed:
+                                        August 2024</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <button class="btn btn-sm btn-outline-secondary preview-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Preview Image Container (hidden by default) -->
+                            <div class="preview-image-container mt-2 w-100 d-none">
+                                <div class="ms-5">
+                                    <img src="Projects/Doc_5.jpg" alt="Project Preview" class="img-fluid rounded border"
+                                        style="max-height: 200px;">
+                                    <div class="text-center mt-1">
+                                        <small class="text-muted">DMJMPI Portal System Preview</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 6 - Online Earning Platform -->
+                        <div class="d-flex mb-3 project-item align-items-start flex-column">
+                            <div class="d-flex w-100">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-money-bill-wave fa-2x text-success"></i>
+                                </div>
+                                <div class="ms-3 flex-grow-1">
+                                    <h6 class="mb-0 fw-bold">Online Earning Platform</h6>
+                                    <p class="text-muted mb-1">Google AdSense</p>
+                                    <small class="text-info"><i class="fas fa-spinner me-1"></i>In Progress</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <button class="btn btn-sm btn-outline-secondary preview-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Preview Image Container (hidden by default) -->
+                            <div class="preview-image-container mt-2 w-100 d-none">
+                                <div class="ms-5">
+                                    <img src="Projects/Doc_6.jpg" alt="Project Preview" class="img-fluid rounded border"
+                                        style="max-height: 200px;">
+                                    <div class="text-center mt-1">
+                                        <small class="text-muted">Online Earning Platform Preview</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 7 - Offline Precinct Locator for Election -->
+                        <div class="d-flex mb-3 project-item align-items-start flex-column">
+                            <div class="d-flex w-100">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-map-marked-alt fa-2x text-info"></i>
+                                </div>
+                                <div class="ms-3 flex-grow-1">
+                                    <h6 class="mb-0 fw-bold">Offline Precinct Locator for Election</h6>
+                                    <p class="text-muted mb-1">Gais-Guipe, Dasol, Pangasinan</p>
+                                    <small class="text-info"><i class="fas fa-spinner me-1"></i>In Progress</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <button class="btn btn-sm btn-outline-secondary preview-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Preview Image Container (hidden by default) -->
+                            <div class="preview-image-container mt-2 w-100 d-none">
+                                <div class="ms-5">
+                                    <img src="Projects/Doc_7.jpg" alt="Project Preview" class="img-fluid rounded border"
+                                        style="max-height: 200px;">
+                                    <div class="text-center mt-1">
+                                        <small class="text-muted">Offline Precinct Locator Preview</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificates Card -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0"><i class="fas fa-certificate me-2 text-primary"></i>Recent
+                            Certificates
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+
+                            <div class="col">
+                                <div class="position-relative">
+                                    <img src="Certificates/Document_1.jpg" class="img-fluid w-100 blurry-image"
+                                        alt="Certificate" data-bs-toggle="modal" data-bs-target="#certificateModal"
+                                        data-img="Certificates/Document_1.jpg">
+                                    <div class="view-overlay">
+                                        <span class="text-black">Click to View</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="position-relative">
+                                    <img src="Certificates/Document_2.jpg" class="img-fluid w-100 blurry-image"
+                                        alt="Certificate" data-bs-toggle="modal" data-bs-target="#certificateModal"
+                                        data-img="Certificates/Document_2.jpg">
+                                    <div class="view-overlay">
+                                        <span class="text-black">Click to View</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="position-relative">
+                                    <img src="Certificates/Document_3.jpg" class="img-fluid w-100 blurry-image"
+                                        alt="Certificate" data-bs-toggle="modal" data-bs-target="#certificateModal"
+                                        data-img="Certificates/Document_3.jpg">
+                                    <div class="view-overlay">
+                                        <span class="text-black">Click to View</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="position-relative">
+                                    <img src="Certificates/Document_4.jpg" class="img-fluid w-100 blurry-image"
+                                        alt="Certificate" data-bs-toggle="modal" data-bs-target="#certificateModal"
+                                        data-img="Certificates/Document_4.jpg">
+                                    <div class="view-overlay">
+                                        <span class="text-black">Click to View</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="position-relative">
+                                    <img src="Certificates/Document_5.jpg" class="img-fluid w-100 blurry-image"
+                                        alt="Certificate" data-bs-toggle="modal" data-bs-target="#certificateModal"
+                                        data-img="Certificates/Document_5.jpg">
+                                    <div class="view-overlay">
+                                        <span class="text-black">Click to View</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools for web development Card -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0"><i class="fas fa-certificate me-2 text-primary"></i>Tools for
+                            Development</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+
+                            <!-- VS Code -->
+                            <div class="col">
+                                <div class="position-relative tool-card">
+                                    <div class="tool-info p-2">
+                                        <h6 class="mb-1 fw-bold">VS Code</h6>
+                                        <small class="text-muted">Powerful code editor with extensions for all
+                                            languages</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Git -->
+                            <div class="col">
+                                <div class="position-relative tool-card">
+                                    <div class="tool-info p-2">
+                                        <h6 class="mb-1 fw-bold">Git</h6>
+                                        <small class="text-muted">Distributed version control system for tracking code
+                                            changes</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hostinger -->
+                            <div class="col">
+                                <div class="position-relative tool-card">
+                                    <div class="tool-info p-2">
+                                        <h6 class="mb-1 fw-bold">Hostinger</h6>
+                                        <small class="text-muted">Web hosting service with cloud solutions and domain
+                                            registration</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- GitHub -->
+                            <div class="col">
+                                <div class="position-relative tool-card">
+                                    <div class="tool-info p-2">
+                                        <h6 class="mb-1 fw-bold">GitHub</h6>
+                                        <small class="text-muted">Platform for version control and collaborative
+                                            software
+                                            development</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PHP -->
+                            <div class="col">
+                                <div class="position-relative tool-card">
+                                    <div class="tool-info p-2">
+                                        <h6 class="mb-1 fw-bold">PHP</h6>
+                                        <small class="text-muted">Server-side scripting language for web
+                                            development</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CSS -->
+                            <div class="col">
+                                <div class="position-relative tool-card">
+                                    <div class="tool-info p-2">
+                                        <h6 class="mb-1 fw-bold">CSS</h6>
+                                        <small class="text-muted">Style sheet language for designing web pages</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- XAMPP -->
+                            <div class="col">
+                                <div class="position-relative tool-card">
+                                    <div class="tool-info p-2">
+                                        <h6 class="mb-1 fw-bold">XAMPP</h6>
+                                        <small class="text-muted">Local server environment for testing PHP
+                                            applications</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Python -->
+                            <div class="col">
+                                <div class="position-relative tool-card">
+                                    <div class="tool-info p-2">
+                                        <h6 class="mb-1 fw-bold">Python</h6>
+                                        <small class="text-muted">Versatile programming language for web and software
+                                            development</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- JavaScript -->
+                            <div class="col">
+                                <div class="position-relative tool-card">
+                                    <div class="tool-info p-2">
+                                        <h6 class="mb-1 fw-bold">JavaScript</h6>
+                                        <small class="text-muted">Client-side scripting language for interactive web
+                                            pages</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 position-absolute top-0 end-0 z-3">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center p-0">
+                    <img id="zoomedCertificate" src="" class="img-fluid" style="max-height: 90vh; width: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.preview-btn').forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const container = this.closest('.project-item').querySelector('.preview-image-container');
+
+                    // Toggle the image visibility
+                    container.classList.toggle('d-none');
+
+                    // Toggle active state of button
+                    this.classList.toggle('active');
+
+                    // Change icon based on state
+                    const icon = this.querySelector('i');
+                    if (container.classList.contains('d-none')) {
+                        icon.classList.remove('fa-eye-slash');
+                        icon.classList.add('fa-eye');
+                    } else {
+                        icon.classList.remove('fa-eye');
+                        icon.classList.add('fa-eye-slash');
+                    }
+                });
+            });
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var certificateModal = new bootstrap.Modal(document.getElementById('certificateModal'));
+            var zoomedImg = document.getElementById('zoomedCertificate');
+
+            // Make sure the modal exists
+            if (certificateModal) {
+                document.querySelectorAll('.blurry-image').forEach(img => {
+                    img.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        zoomedImg.src = this.getAttribute('data-img');
+                        certificateModal.show();
+                    });
+                });
+
+                // Add click handler for close button
+                document.querySelector('#certificateModal .btn-close').addEventListener('click', function () {
+                    certificateModal.hide();
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
