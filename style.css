@@ -178,3 +178,13 @@
      transform: translateY(-5px);
      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
  }
+
+ .unuploaded-certificate {
+     transition: all 0.2s ease;
+     cursor: default;
+ }
+
+ .unuploaded-certificate:hover {
+     background-color: #f8f9fa;
+     border-color: #adb5bd;
+ }
