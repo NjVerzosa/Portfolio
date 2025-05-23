@@ -664,84 +664,12 @@
                     </div>
                 </div>
 
-
-                <!-- Tools for outside of web development Card -->
-                <div class="card shadow-sm mb-4">
-                    <div class="card-header bg-white">
-                        <h5 class="card-title mb-0"><i class="fas fa-certificate me-2 text-primary"></i>Additional Tools
-                        </h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
-
-                            <!-- Thor -->
-                            <div class="col">
-                                <div class="position-relative tool-card">
-                                    <div class="tool-info p-2">
-                                        <h6 class="mb-1 fw-bold">Thor</h6>
-                                        <small class="text-muted">A lightweight, open-source code editor for teaching
-                                            programming basics (Python,
-                                            JavaScript, etc.) with syntax highlighting and plugin support.</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Nmap -->
-                            <div class="col">
-                                <div class="position-relative tool-card">
-                                    <div class="tool-info p-2">
-                                        <h6 class="mb-1 fw-bold">Nmap</h6>
-                                        <small class="text-muted">Network scanning tool used in cybersecurity courses to
-                                            teach port scanning,
-                                            vulnerability assessment, and network mapping.</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Termux -->
-                            <div class="col">
-                                <div class="position-relative tool-card">
-                                    <div class="tool-info p-2">
-                                        <h6 class="mb-1 fw-bold">Termux</h6>
-                                        <small class="text-muted">Android terminal emulator for learning Linux commands,
-                                            scripting, and ethical
-                                            hacking on mobile devices.</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Hydra -->
-                            <div class="col">
-                                <div class="position-relative tool-card">
-                                    <div class="tool-info p-2">
-                                        <h6 class="mb-1 fw-bold">Hydra</h6>
-                                        <small class="text-muted">Password-cracking tool used in cybersecurity labs to
-                                            demonstrate brute-force
-                                            attacks and defense strategies.</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Phishing -->
-                            <div class="col">
-                                <div class="position-relative tool-card">
-                                    <div class="tool-info p-2">
-                                        <h6 class="mb-1 fw-bold">Phishing</h6>
-                                        <small class="text-muted">A security education topic covering simulated attacks
-                                            to teach email/web fraud
-                                            detection and prevention.</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="certificateModal" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="true"
+        data-bs-keyboard="true">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen">
             <div class="modal-content bg-transparent border-0">
                 <div class="modal-header border-0 position-absolute top-0 end-0 z-3">
@@ -786,10 +714,10 @@
 
 
         document.addEventListener('DOMContentLoaded', function () {
-            var certificateModal = new bootstrap.Modal(document.getElementById('certificateModal'));
+            var certificateModalEl = document.getElementById('certificateModal');
+            var certificateModal = new bootstrap.Modal(certificateModalEl);
             var zoomedImg = document.getElementById('zoomedCertificate');
 
-            // Make sure the modal exists
             if (certificateModal) {
                 document.querySelectorAll('.blurry-image').forEach(img => {
                     img.addEventListener('click', function (e) {
@@ -799,9 +727,11 @@
                     });
                 });
 
-                // Add click handler for close button
-                document.querySelector('#certificateModal .btn-close').addEventListener('click', function () {
-                    certificateModal.hide();
+                // Close when clicking on modal backdrop
+                certificateModalEl.addEventListener('click', function (e) {
+                    if (e.target === certificateModalEl) {
+                        certificateModal.hide();
+                    }
                 });
             }
         });
